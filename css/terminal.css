@@ -1,47 +1,77 @@
+
 *{
-    padding: 0;
-    overflow: hidden;
     margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .terminal{
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
     background: #000;
-    color: greenyellow;
     padding: 20px;
-    font-size: 20px;
-    font-family: monospace;
+    height: calc(200vh - 40px);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .input{
     display: flex;
-    width: 90%;
     align-items: center;
+    justify-content: center;
 }
 
-.command{
-    font-family: monospace;
-    font-size: 20px;
-    width: 100% !important;
-    background-color: #000;
+b,
+a:hover{
+    color: aqua;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+strong,
+.prompt{
+    color: yellowgreen;
+    font-weight: 600;
+}
+
+.command {
+    width: 100%;
     margin-left: 10px;
-    color: #fff;
-    border: none;
+    color: white;
+    background-color: #000;
     outline: none;
-    caret-color: #fff;
-    caret-shape: block;
+    border: none;
 }
 
-.output{
-    color: #fff;
+.list{
+    display: grid;
 }
 
-.output strong {
-    color: greenyellow;
-    font-weight: 500;
+pre{
+    display: flex;
+    flex-direction: column;
+    color: #eaeaea;
 }
 
-.output b{
-    color: rgb(0, 179, 255);
+.comment{
+    color: grey;
+}
+
+.hidden {
+    color: #000;
+}
+
+.introduction strong{
+    color: tomato;
+}
+
+::-webkit-progress-bar{
+    background-color: yellowgreen;
 }
