@@ -26,8 +26,7 @@ body{
 .help-comment{
     color: #909090;
     position: absolute;
-    bottom:50px;
-    rigth: 10px;
+    bottom:0px;
 }
 
 .input{
