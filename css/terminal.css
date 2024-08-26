@@ -7,6 +7,11 @@
     font-size: 20px;
 }
 
+body{
+    overflow: hidden;
+    position: relative;
+}
+
 .terminal{
     display: flex;
     flex-direction: column;
@@ -16,6 +21,12 @@
     height: calc(200vh - 40px);
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.help-comment{
+    position: absolue;
+    bottom:10pxl
+    rigth: 10px;
 }
 
 .input{
